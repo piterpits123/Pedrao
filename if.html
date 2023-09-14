@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de HTML com if em JavaScript</title>
+</head>
+<body>
+
+<h1>Exemplo de HTML com if em JavaScript</h1>
+
+<p>Clique no botão para mostrar/ocultar um parágrafo:</p>
+
+<button onclick="mostrarOcultarParagrafo()">Mostrar/Ocultar</button>
+
+<p id="paragrafo" style="display:none;">Este é um parágrafo que pode ser mostrado ou oculto.</p>
+
+<script>
+function mostrarOcultarParagrafo() {
+    var paragrafo = document.getElementById("paragrafo");
+    
+    if (paragrafo.style.display === "none") {
+        paragrafo.style.display = "block";
+    } else {
+        paragrafo.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
