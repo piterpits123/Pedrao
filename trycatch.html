@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Try...Catch em HTML</title>
+</head>
+<body>
+
+<h1>Exemplo de Try...Catch em HTML</h1>
+
+<button onclick="gerarErro()">Clique para gerar um erro</button>
+
+<p id="mensagemErro"></p>
+
+<script>
+function gerarErro() {
+    try {
+        // Tente executar um código que gera um erro
+        // Neste caso, tentamos acessar uma variável que não está definida
+        console.log(variavelNaoDefinida);
+    } catch (erro) {
+        // Se ocorrer um erro, capture-o e manipule-o aqui
+        document.getElementById("mensagemErro").innerHTML = "Ocorreu um erro: " + erro.message;
+    }
+}
+</script>
+
+</body>
+</html>
