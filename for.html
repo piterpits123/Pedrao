@@ -1,0 +1,19 @@
+# Números de exemplo para a lista
+numeros = [1, 2, 3, 4, 5]
+
+# Criação do arquivo HTML
+with open('exemplo.html', 'w') as arquivo_html:
+    arquivo_html.write('<html>\n')
+    arquivo_html.write('<head><title>Exemplo de Lista HTML</title></head>\n')
+    arquivo_html.write('<body>\n')
+    arquivo_html.write('<ul>\n')
+
+    # Loop for para criar os elementos da lista
+    for numero in numeros:
+        arquivo_html.write(f'  <li>Item {numero}</li>\n')
+
+    arquivo_html.write('</ul>\n')
+    arquivo_html.write('</body>\n')
+    arquivo_html.write('</html>\n')
+
+print("Arquivo HTML gerado com sucesso: exemplo.html")
